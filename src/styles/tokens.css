@@ -1,0 +1,110 @@
+:root {
+  /* Color — primitives */
+  --ink-950: #0a0b0f;
+  --ink-900: #12141a;
+  --ink-800: #1b1e27;
+  --ink-700: #2a2e3a;
+  --white-100: #ffffff;
+  --white-70: #b4b8c4;
+  --white-40: #6e7280;
+  --accent-500: #5b6cff;
+  --accent-400: #7b89ff;
+  --accent-600: #4453e0;
+  --mint-500: #3ddc97;
+  --error-500: #ff5c6c;
+
+  /* Color — semantic */
+  --color-bg-page: var(--ink-950);
+  --color-bg-surface: var(--ink-900);
+  --color-bg-surface-alt: var(--ink-800);
+  --color-border: var(--ink-700);
+  --color-text-primary: var(--white-100);
+  --color-text-secondary: var(--white-70);
+  --color-text-muted: var(--white-40);
+  --color-accent: var(--accent-500);
+  --color-accent-hover: var(--accent-400);
+  --color-accent-pressed: var(--accent-600);
+  --color-success: var(--mint-500);
+  --color-error: var(--error-500);
+  --color-text-on-accent: var(--white-100);
+
+  /* Spacing */
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 24px;
+  --spacing-xl: 40px;
+  --spacing-2xl: 64px;
+  --spacing-3xl: 96px;
+
+  /* Radius */
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+  --radius-full: 999px;
+
+  /* Typography */
+  --font-family: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+
+  --shadow-card: 0 12px 32px -8px rgba(0, 0, 0, 0.35);
+  --shadow-accent-glow: 0 8px 40px -4px rgba(91, 108, 255, 0.35);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 30px;
+  padding: 0px;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: var(--font-family);
+  background: var(--color-bg-page);
+  color: var(--color-text-primary);
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+input,
+textarea,
+select {
+  font-family: inherit;
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
+}
+
+.container {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-3xl);
+}
+
+@media (max-width: 640px) {
+  .container {
+    padding: 0 var(--spacing-lg);
+  }
+}
