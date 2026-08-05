@@ -5,8 +5,7 @@
   text-align: center;
   gap: var(--spacing-lg);
   padding-top: var(--spacing-3xl);
-  padding-bottom: 200px !important;
-  background: #ff0000 !important; /* красный */
+  padding-bottom: 200px;
 }
 
 .kicker {
