@@ -18,12 +18,12 @@ const item = {
 export default function HeroSection() {
   return (
     <motion.section
-      className={styles.hero}        
+      className={styles.hero}
       variants={container}
       initial="hidden"
       animate="visible"
     >
-      <div className="container">      
+      <div className={`container ${styles.inner}`}>
         <motion.span variants={item} className={styles.kicker}>
           Веб-студия полного цикла
         </motion.span>
