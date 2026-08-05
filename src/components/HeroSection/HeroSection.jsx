@@ -18,34 +18,36 @@ const item = {
 export default function HeroSection() {
   return (
     <motion.section
-      className={`${styles.hero} container`}
+      className={styles.hero}        
       variants={container}
       initial="hidden"
       animate="visible"
     >
-      <motion.span variants={item} className={styles.kicker}>
-        Веб-студия полного цикла
-      </motion.span>
-      <motion.h1 variants={item} className={styles.title}>
-        Мы создаём цифровые продукты, которым доверяют
-      </motion.h1>
-      <motion.p variants={item} className={styles.subtitle}>
-        Проектируем интерфейсы, разрабатываем сайты и веб-приложения — от идеи до запуска в
-        продакшн.
-      </motion.p>
-      <motion.div variants={item} className={styles.actions}>
-        <Button variant="primary" to="/contacts">
-          Обсудить проект
-        </Button>
-        <Button
-          variant="secondary"
-          onClick={() =>
-            document.getElementById("about")?.scrollIntoView({ behavior: "smooth" })
-          }
-        >
-          О студии
-        </Button>
-      </motion.div>
+      <div className="container">      
+        <motion.span variants={item} className={styles.kicker}>
+          Веб-студия полного цикла
+        </motion.span>
+        <motion.h1 variants={item} className={styles.title}>
+          Мы создаём цифровые продукты, которым доверяют
+        </motion.h1>
+        <motion.p variants={item} className={styles.subtitle}>
+          Проектируем интерфейсы, разрабатываем сайты и веб-приложения — от идеи до запуска в
+          продакшн.
+        </motion.p>
+        <motion.div variants={item} className={styles.actions}>
+          <Button variant="primary" to="/contacts">
+            Обсудить проект
+          </Button>
+          <Button
+            variant="secondary"
+            onClick={() =>
+              document.getElementById("about")?.scrollIntoView({ behavior: "smooth" })
+            }
+          >
+            О студии
+          </Button>
+        </motion.div>
+      </div>
     </motion.section>
   );
 }
