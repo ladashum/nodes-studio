@@ -1,4 +1,4 @@
-/*.stat {
+.stat {
   display: flex;
   flex-direction: column;
   gap: var(--spacing-xs);
@@ -17,4 +17,4 @@
   line-height: 1.4;
   color: var(--color-text-secondary);
   max-width: 160px;
-}*/
+}
