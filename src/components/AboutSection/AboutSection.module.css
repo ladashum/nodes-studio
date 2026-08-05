@@ -2,6 +2,8 @@
   width: 100%;
   background: var(--color-bg-surface);
   padding: var(--spacing-3xl) 0;
+  background: #00ff00 !important; /* зелёный */
+  margin-top: 0 !important;
 }
 
 .inner {
